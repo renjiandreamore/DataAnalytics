@@ -114,29 +114,44 @@ while (count < len(city)):
 ########### Section 2 - Arrays/Lists ##############
 #####################################################
 
-variable = "hello"
-print variable
-type(variable)
+arrayOfNumbers = [0,1,2,3,4,5,6]
+print arrayOfNumbers[1]
 
-variable = 12
-type(variable)
+arrayOfStrings = ["apple", "banana", "carrot"]
+print arrayOfNumbers[1]
 
-variable = {"apple","banana"}
-type(variable) 
+print arrayOfNumbers[0]
 
-variable = "some string"
-print variable
-variable[0]
-variable[2]
-variable[2:4]
-variable[0:5]
-variable[:5]
-variable[5:]
+pals = list()
+pals.append("Glenn")
+pals.append("Sally")
+pals.append("Joe")
+
+print pals
+print type(pals)
+
+for friend in pals:
+	print "I am friends with:" + friend
+	
+pals[1] = "Lisa"
+for friend in pals:
+	print "I am friends with:" + friend
+	
+print pals.index("Joe")
+
+pals.reverse()
+print pals.index("Joe")
+
+pal = dict()
+pal["first"] = "Glenn"
+pal["last"] = "Golden"
+pal["email"] = "glenng@some.edu"
+pal["phone"] = "123-123-1221"
+
+print pal
+print type(pal)
+for contactInfo in pal:
+	print contactInfo, pal[contactInfo]
+	
 
 
-print variable.find("me")
-print variable.capitalize()
-
-numberVariable = 42
-print "the answer to life, universe, and everything is.. " + `numberVariable`
-print "the answer to life, universe, and everything is.. " + str(numberVariable)
